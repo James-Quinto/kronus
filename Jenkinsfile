@@ -8,11 +8,11 @@ pipeline {
                         label "windows"
                     }
                     steps {
-                        //bat "run-tests.bat"
+                        bat "run-tests.bat"
                     }
                     post {
                         always {
-                            //junit "**/TEST-*.xml"
+                            junit "**/TEST-*.xml"
                         }
                     }
                 }
@@ -21,11 +21,11 @@ pipeline {
                         label "linux"
                     }
                     steps {
-                        //sh "run-tests.sh"
+                        sh "run-tests.sh"
                     }
                     post {
                         always {
-                            //junit "**/TEST-*.xml"
+                            junit "**/TEST-*.xml"
                         }
                     }
                 }
